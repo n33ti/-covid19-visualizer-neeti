@@ -1,0 +1,56 @@
+<div class="container">
+
+
+<div class="row">
+    <div class="col-2 orange-bg box">
+        Total cases <br>
+        {{confirmed}}
+    </div><pre>   </pre>
+    <div class="col-2 green-bg box">
+        Recovered cases <br>
+        {{recovered}}
+    </div><pre>   </pre>
+    <div class="col-2 blue-bg box">
+        Deceased cases <br>
+        {{deaths}}
+    </div>
+</div>
+<br>
+<br>
+
+<div class="row">
+    <div class="col-6">
+        <h3>
+            Daily Cases
+        </h3>
+        <div class="chart-wrapper" >
+            <canvas baseChart 
+                [datasets]="lineChartData" 
+                [labels]="lineChartLabels" 
+              
+                [colors]="lineChartColors" 
+                
+                [chartType]="lineChartType" 
+                [plugins]="lineChartPlugins">
+            </canvas>
+    </div>
+</div>
+<div class="col-6">
+<h3>
+    Weekly Total Cases
+</h3>
+<div class="chart-wrapper">
+    <canvas baseChart 
+    [datasets]="lineChart2Data" 
+    [labels]="lineChart2Labels" 
+  
+    [colors]="lineChart2Colors" 
+    
+    [chartType]="lineChart2Type" 
+    [plugins]="lineChart2Plugins">
+</canvas>
+</div>
+</div>
+
+</div>
+</div>

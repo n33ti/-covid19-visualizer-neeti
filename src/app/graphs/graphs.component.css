@@ -1,0 +1,19 @@
+.orange-bg
+{
+   background-image:  linear-gradient(red, orange);
+   margin-left: 150px;
+}
+.blue-bg
+{
+   background-image:  linear-gradient(red, blue);
+   margin-left: 150px;
+}
+.green-bg
+{
+   background-image:  linear-gradient(red, green);
+   margin-left: 150px;
+}
+.box:hover
+{
+    background-image:  linear-gradient(red, maroon);
+}

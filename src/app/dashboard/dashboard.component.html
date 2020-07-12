@@ -1,6 +1,6 @@
-<div class="row">
+<div class="row" *ngIf = "show">
   <div class="col-6">
-    <div *ngIf = "show" class="chart-wrapper">
+    <div  class="chart-wrapper">
       <canvas baseChart 
       [datasets]="barChartData"
       [labels]="barChartLabels"
@@ -8,10 +8,17 @@
       [chartType]="barChartType">
     </canvas>
   </div>
-  <div  *ngIf = "show" col-6>
+  </div>
+  <div >
     Total tested : {{totaltested}}
   </div>
+  
+  <div class="col">
+    <canvas id ="canvas">
+
+    </canvas>
   </div>
+  
 </div>
 <br>
 <br>

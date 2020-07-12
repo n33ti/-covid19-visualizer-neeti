@@ -20,4 +20,9 @@ export class StateReportService {
   {
     return this.http.get('https://api.covid19india.org/state_test_data.json')
   }
+
+  getDistrict(): Observable<any>
+  {
+    return this.http.get('https://api.covid19india.org/zones.json')
+  }
 }

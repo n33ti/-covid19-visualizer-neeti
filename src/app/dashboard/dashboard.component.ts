@@ -14,6 +14,7 @@ export class DashboardComponent implements OnInit {
  show = false
  data;
  event;
+ totaltested
  
 
   barChartLabels: Label[] =['negative', 'positive']
@@ -101,11 +102,11 @@ export class DashboardComponent implements OnInit {
 
       }
      
-// console.log(data.states_tested_data[k])
+ console.log(data.states_tested_data[k])
  this.barChartData[0].data = []
  this.barChartData[0].data.push(data.states_tested_data[k].negative)
  this.barChartData[0].data.push(data.states_tested_data[k].positive)
-    
+    this.totaltested = data.states_tested_data[k].totaltested
     }
   )
     
